@@ -1,0 +1,4 @@
+- hosts: all
+  roles:
+    - role: general_purpose_copy
+      tags: general_purpose_copy

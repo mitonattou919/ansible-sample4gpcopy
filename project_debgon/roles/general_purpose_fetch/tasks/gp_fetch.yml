@@ -1,0 +1,8 @@
+- name: General purpose fetch
+  ansible.builtin.fetch:
+    src: "/{{  item.target_file }}"
+    dest: 'backup'
+  with_items:
+    - "{{ general_purpose_copy_info }}"
+  become: yes
+
